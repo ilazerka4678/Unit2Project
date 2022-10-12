@@ -1,0 +1,45 @@
+Linear Equation Class
+instance variables:
+firstX -> x coordinate of the first point
+secondX -> x coordinate of the 2nd point
+firstY -> y coordinate of the first point
+secondY -> y coordinate of the 2nd point, value will be determined by user, applies to the 3 variables above too
+
+
+constructor:
+public LinearEquation(int firstX, int firstY, int secondX, int secondY)
+this.firstX = firstX
+this.firstY = firstY
+this.secondX = secondX
+this.secondY = secondY
+
+
+methods:
+public String getSlope(int firstX, int firstY, int secondX, int secondY)
+^will return secondY - firstY + "/" + secondX + firstX and set a slope variable to (secondY - firstY)/(secondX - firstX)
+public String toString()
+^will return the coordinates for both points, the slope of the line, the y intercept, the linear equation, and the distance between the points
+public double getIntercept(slope, firstX, firstY)
+^will return the y intercept
+public double pointDistance(firstX, firstY, secondX, secondY)
+^will return the distance between the 2 points
+public double findY(thirdX, slope)
+^thirdX will be set to the users input, and the method will then find the y coordinate .
+
+
+
+
+EquationRunner
+1: user inputs the xy coordinate for the first point
+2: first x set to substring 1 to str.indexOf(",")
+3: first y set to substring str.indexOf(",")
+4.5: user inputs the xy coordinate for the second point
+4: second x set to substring 1 to str2.indexOf(",")
+5: second y set to substring str2.indexOf (",")
+6:calculate slope with the getSlope method
+7:calculate y intercept with the getIntercept method
+8:calculate distance with the pointDistance method
+9:display information with the toString method
+10: third x is set to user input
+11: calculate third y with findY
+12: display third x and third y
