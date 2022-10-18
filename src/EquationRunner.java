@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class EquationRunner {
@@ -8,6 +9,7 @@ public class EquationRunner {
     public int secondY;
     public int secondX;
     public static void main(String[] args) {
+    DecimalFormat round = new DecimalFormat("###.##");
     Scanner input = new Scanner(System.in);
     System.out.print("Enter the coordinates for the first point: ");
     String firstPoint = input.nextLine();
@@ -25,11 +27,12 @@ public class EquationRunner {
     System.out.println("First pair: " + firstPoint);
     System.out.println("Second pair: " + secondPoint);
     System.out.println("Slope of line: " + slopeValue);
-    System.out.println("Y-intercept: " + yIntercept);
+    System.out.println("Y-intercept: " + round.format(yIntercept));
     System.out.println("Slope intercept form: y = " + linEquation.getSlopeString() + "x + " + yIntercept);
-    System.out.println("Distance between points: " + distance);
+    System.out.println("Distance between points: " + round.format(distance));
     System.out.print("Enter an x-value: ");
     double xCoordinate = input.nextDouble();
+    System.out.print(round.format(linEquation.findY(xCoordinate)));
 
     }
 }

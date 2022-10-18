@@ -31,4 +31,7 @@ public class LinearEquation {
     double x = (double)Math.sqrt(Math.pow(secondX-firstX,2)+Math.pow(secondY-firstY,2));
     return x;
     }
+    public double findY(double x){
+        return slope * x + (firstY - slope*firstX);
+    }
 }

@@ -43,3 +43,5 @@ EquationRunner
 10: third x is set to user input
 11: calculate third y with findY
 12: display third x and third y
+13: everything can be rounded with the decimal format class
+14: finish up by making print statements that look good
