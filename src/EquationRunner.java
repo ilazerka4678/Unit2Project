@@ -22,7 +22,11 @@ public class EquationRunner {
     LinearEquation linEquation = new LinearEquation(firstX, firstY, secondX, secondY);
     double slopeValue = linEquation.getSlopeDouble();
     double yIntercept = linEquation.getIntercept();
-
-
+    double distance = linEquation.pointDistance();
+        System.out.println(secondX);
+        System.out.println(secondY);
+        System.out.println(slopeValue);
+        System.out.println(yIntercept);
+        System.out.println(distance);
     }
 }

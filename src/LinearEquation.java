@@ -21,13 +21,13 @@ public class LinearEquation {
     public double getSlopeDouble(){
         int numerator = secondY - firstY;
         int denominator = secondX - firstX;
-        double slope = numerator/denominator;
+        slope = numerator/denominator;
         return numerator/denominator;
     }
     public double getIntercept(){
-    return firstY - slope*firstX;
+    return (firstY - slope*firstX);
     }
     public double pointDistance(){
-    return Math.sqrt(((secondX-firstX)*(secondX-firstX))-(((secondY-firstY)*(secondY-firstY))));
+    return (double)Math.sqrt(Math.pow(secondX-firstX,2)+Math.pow(secondY-firstY,2));
     }
 }
