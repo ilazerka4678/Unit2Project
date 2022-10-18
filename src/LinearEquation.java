@@ -28,6 +28,7 @@ public class LinearEquation {
     return (firstY - slope*firstX);
     }
     public double pointDistance(){
-    return (double)Math.sqrt(Math.pow(secondX-firstX,2)+Math.pow(secondY-firstY,2));
+    double x = (double)Math.sqrt(Math.pow(secondX-firstX,2)+Math.pow(secondY-firstY,2));
+    return x;
     }
 }

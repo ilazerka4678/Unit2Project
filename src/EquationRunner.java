@@ -13,8 +13,7 @@ public class EquationRunner {
     String firstPoint = input.nextLine();
     int firstX = Integer.parseInt(firstPoint.substring(1,firstPoint.indexOf(",")));
     int firstY = Integer.parseInt(firstPoint.substring(firstPoint.indexOf(",")+1, firstPoint.length()-1));
-    System.out.println(firstX);
-    System.out.println(firstY);
+
     System.out.print("Enter the coordinates for the second point: ");
     String secondPoint = input.nextLine();
     int secondX = Integer.parseInt(secondPoint.substring(1,secondPoint.indexOf(",")));
@@ -23,10 +22,14 @@ public class EquationRunner {
     double slopeValue = linEquation.getSlopeDouble();
     double yIntercept = linEquation.getIntercept();
     double distance = linEquation.pointDistance();
-        System.out.println(secondX);
-        System.out.println(secondY);
-        System.out.println(slopeValue);
-        System.out.println(yIntercept);
-        System.out.println(distance);
+    System.out.println("First pair: " + firstPoint);
+    System.out.println("Second pair: " + secondPoint);
+    System.out.println("Slope of line: " + slopeValue);
+    System.out.println("Y-intercept: " + yIntercept);
+    System.out.println("Slope intercept form: y = " + linEquation.getSlopeString() + "x + " + yIntercept);
+    System.out.println("Distance between points: " + distance);
+    System.out.print("Enter an x-value: ");
+    double xCoordinate = input.nextDouble();
+
     }
 }
